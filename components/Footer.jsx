@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div
       id="kontakt"
-      className="mt-16 flex h-[130px] flex-col items-center justify-center gap-4 sm:h-[100px] sm:px-16 md:flex-row md:justify-between"
+      className=" flex h-[130px] flex-col items-center justify-center gap-4 sm:h-[100px] sm:px-16 md:flex-row md:justify-between"
     >
       <div className="flex flex-col gap-4 sm:flex-row lg:gap-16">
         <div className="flex gap-4 md:gap-4 lg:gap-16 ">

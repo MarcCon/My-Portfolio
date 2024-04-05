@@ -108,7 +108,7 @@ export default function BlogPost({ post }) {
           </main>
 
           <div>
-            <div>
+            <div className="pb-16">
               <RichText content={post.content.raw} renderers={renderers} />
             </div>
           </div>
