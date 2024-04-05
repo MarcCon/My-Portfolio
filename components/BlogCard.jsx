@@ -8,7 +8,7 @@ const BlogCard = ({ title, coverPhoto, datePublished, slug }) => {
     year: "numeric",
   });
   return (
-    <div className="lg:max-w-sm max-w-52 sm:max-w-64 rounded-xl overflow-hidden shadow-lg m-4 bg-lightblue">
+    <div className="lg:max-w-sm max-w-64 rounded-xl overflow-hidden shadow-lg m-4 bg-lightblue">
       <Link href={"/blog/" + slug}>
         <div className="p-4">
           <img

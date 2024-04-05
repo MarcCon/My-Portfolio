@@ -43,7 +43,7 @@ export default function Blog({ posts }) {
         <h1 className="text-white lg:text-4xl text-3xl text-center pt-16 font-extrabold">
           Blog{" "}
         </h1>
-        <h2 className="font-thin text-gray-300 text-lg lg:text-2xl text-center pt-4">
+        <h2 className="font-thin px-4 text-gray-300 text-lg lg:text-2xl text-center pt-4">
           Hier teile ich meine Gedanken zu aktuellen Trends und Technologien{" "}
         </h2>
 
