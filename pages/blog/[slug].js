@@ -39,13 +39,17 @@ const bodyClasses = "";
 
 const renderers = {
   h1: ({ children }) => (
-    <h1 className="text-5xl font-extrabold mb-4 text-white">{children}</h1>
+    <h1 className="lg:text-5xl text-3xl font-extrabold mb-4 text-white">
+      {children}
+    </h1>
   ),
   h2: ({ children }) => (
-    <h2 className="text-3xl mb-4 font-extrabold  text-white">{children}</h2>
+    <h2 className="lg:text-3xl text-xl mb-4 font-extrabold  text-white">
+      {children}
+    </h2>
   ),
   p: ({ children }) => (
-    <p className="my-4 leading-8  text-xl font-thin text-gray-300">
+    <p className="my-4 leading-8 text-base lg:text-xl font-thin text-gray-300">
       {children}
     </p>
   ),
@@ -76,12 +80,12 @@ export default function BlogPost({ post }) {
     <>
       <Navbar />
       <div className="bg-darkblue h-full">
-        <div className="max-w-3xl mx-auto">
+        <div className="lg:max-w-3xl md:max-w-xl max-w-md px-4 mx-auto">
           <main>
             <div className="pt-16">
               <div className="bg-purple-700 rounded-xl p-8">
                 <div className="flex gap-2">
-                  <span className="text-white text-xl font-thin">
+                  <span className="text-white lg:text-xl text-base font-thin">
                     {new Date(post.datePublished).toLocaleDateString("de-DE", {
                       year: "numeric",
                       month: "long",
@@ -89,7 +93,7 @@ export default function BlogPost({ post }) {
                     })}
                   </span>
                 </div>
-                <h2 className="text-white text-5xl font-extrabold mb-2">
+                <h2 className="text-white lg:text-5xl text-3xl font-extrabold mb-2">
                   {post.title}
                 </h2>
                 <div className="text-white opacity-80"></div>

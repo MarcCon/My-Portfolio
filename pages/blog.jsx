@@ -40,10 +40,10 @@ export default function Blog({ posts }) {
     <>
       <Navbar />
       <div className="bg-darkblue h-screen">
-        <h1 className="text-white text-4xl text-center pt-16 font-extrabold">
+        <h1 className="text-white lg:text-4xl text-3xl text-center pt-16 font-extrabold">
           Blog{" "}
         </h1>
-        <h2 className="font-thin text-gray-300 text-2xl text-center pt-4">
+        <h2 className="font-thin text-gray-300 text-lg lg:text-2xl text-center pt-4">
           Hier teile ich meine Gedanken zu aktuellen Trends und Technologien{" "}
         </h2>
 
