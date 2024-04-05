@@ -7,10 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        darkblue: "rgb(5,4,19)",
+        lightblue: "rgb(21,35,60)",
+        mypurple: "rgb(238,130,238, .7)",
+        projectblue: "rgb(18,15,55)",
+        ReactBlue: "rgb(0 216 255)",
+        TailwindBlue: "rgb(49,181,247)",
+        NodeGreen: "rgb(72,148,57)",
+        JavascriptYellow: "rgb(238,215,69)",
+      },
+
+      boxShadow: {
+        glow: "0 0 35px 2px rgba(238,130,238, 0.5)",
+        glowlight: "0 0 35px 2px rgba(238,130,238, 0.15)", // Rosa Glow-Effekt
       },
     },
   },
