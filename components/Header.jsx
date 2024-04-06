@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
@@ -6,10 +6,9 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import Image from "next/image";
 
 const Header = () => {
-  const [isVideoLoaded, setIsVideoLoaded] = useState(true);
-
   return (
     <>
       <Navbar />
@@ -52,25 +51,22 @@ const Header = () => {
                 </a>
               </div>
             </div>
-            <div className="mx-auto flex h-40 w-40 items-center justify-center overflow-hidden rounded-full bg-black shadow-glow sm:h-48 sm:w-48 lg:h-64 lg:w-64">
-              {!isVideoLoaded && (
-                <img
-                  className="min-h-full min-w-full object-cover"
-                  src="/StandBildIch.png"
-                  alt="Loading"
-                  style={{ display: !isVideoLoaded ? "block" : "none" }}
-                />
-              )}
+            <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-full bg-black shadow-glow sm:h-48 sm:w-48 lg:h-64 lg:w-64">
+              <img
+                className="absolute top-0 left-0 h-full w-full object-cover z-10"
+                src="/StandBildIch.png"
+                alt="Loading"
+              />
               <video
-                className=" h-44 w-44 rounded-full sm:h-52 sm:w-52 lg:h-64 lg:w-64"
+                className="absolute top-0 left-0 h-full w-full object-cover rounded-full z-20"
                 autoPlay
                 muted
                 loop
                 playsInline
                 src="/VideoMe.mp4"
-                onLoadedData={() => setIsVideoLoaded(true)}
-                style={{ display: isVideoLoaded ? "block" : "none" }}
-              ></video>
+              >
+                Ihr Browser unterstützt das Video-Tag nicht.
+              </video>
             </div>
           </div>
           <div className="flex flex-row items-center justify-center gap-4 pt-8 sm:gap-8 sm:pt-16">
