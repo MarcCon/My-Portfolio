@@ -21,7 +21,7 @@ function Portfolio() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/lara.svg" className="max-w-full h-auto" />
+              <img src="/lara.png" className="max-w-full h-auto" />
             </a>
 
             <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
@@ -40,7 +40,7 @@ function Portfolio() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/nomad.svg" className="max-w-full h-auto" />
+              <img src="/nomad.png" className="max-w-full h-auto" />
             </a>
             <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
               Reiseprotokol
