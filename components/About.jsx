@@ -3,10 +3,10 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="bg-darkblue md:mb-24 mb-44 pt-48">
+      <div className="bg-darkblue md:mb-24 mb-44 pt-48 px-8">
         <div
           id="about"
-          className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-16 px-4 pb-4 sm:px-16 sm:pb-48 lg:flex-row lg:px-4  "
+          className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-16 pb-4 sm:px-16 sm:pb-48 lg:flex-row lg:px-4  "
         >
           <img
             src="/ich.JPG"

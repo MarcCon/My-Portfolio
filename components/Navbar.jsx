@@ -1,64 +1,39 @@
 import React from "react";
 import MobilNav from "./MobilNav";
-import { Link as ScrollLink } from "react-scroll";
-import Link from "next/link";
+import Link from "next/link"; // Import von ScrollLink entfernt, da er im Codebeispiel nicht verwendet wird
 
 const Navbar = () => {
   return (
     <>
-      <nav className="z-50 sticky left-0 top-0 flex w-full items-center justify-end bg-darkblue p-8 text-base font-bold text-white shadow-md shadow-slate-800 sm:px-16 sm:text-xl">
-        <div className="mr-auto">
-          <Link href="/">
-            <p className="w-[90px] font-bold transition duration-300 ease-in-out hover:text-mypurple">
-              marc.dev
-            </p>
-          </Link>
-        </div>
+      <nav className="z-50 sticky left-0 top-0 flex w-full items-center justify-between bg-darkblue 2xl:p-8 sm:p-6 p-4 text-base font-bold text-white shadow-md shadow-slate-800 sm:px-16 sm:text-xl">
+        {/* "marc.dev" Text auf der linken Seite */}
+        <Link href="/">
+          <p className="font-bold transition duration-300 ease-in-out hover:text-mypurple">
+            marc.dev
+          </p>
+        </Link>
 
+        {/* Andere Navigationslinks für größere Bildschirme, versteckt auf kleineren Bildschirmen */}
         <div className="hidden gap-12 sm:flex">
           <Link href="/">
             <p className="cursor-pointer transition duration-300 ease-in-out hover:text-mypurple">
               Home
             </p>
           </Link>
-          {/* <ScrollLink
-            to="about"
-            offset={-200}
-            smooth={true}
-            duration={500}
-            className="cursor-pointer transition duration-300 ease-in-out hover:text-mypurple"
-          >
-            Über mich
-          </ScrollLink> */}
-          {/* <ScrollLink
-            to="portfolio"
-            offset={-100}
-            smooth={true}
-            duration={500}
-            className="cursor-pointer transition duration-300 ease-in-out hover:text-mypurple"
-          >
-            Portfolio
-          </ScrollLink> */}
+          {/* Weitere Links und ScrollLinks */}
           <Link href="/blog">
             <p className="cursor-pointer transition duration-300 ease-in-out hover:text-mypurple">
               Blog
             </p>
           </Link>
-          {/* <ScrollLink
-            to="kontakt"
-            offset={-100}
-            smooth={true}
-            duration={500}
-            className="cursor-pointer transition duration-300 ease-in-out hover:text-mypurple"
-          >
-            Kontakt
-          </ScrollLink> */}
+          {/* Weitere ScrollLinks */}
+        </div>
+
+        {/* MobilNav auf der rechten Seite, nur sichtbar auf kleineren Bildschirmen */}
+        <div className="sm:hidden">
+          <MobilNav />
         </div>
       </nav>
-
-      <div className="fixed right-6 top-6 z-50 sm:hidden">
-        <MobilNav />
-      </div>
     </>
   );
 };

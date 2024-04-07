@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <Navbar />
       <div className="bg-darkblue">
-        <div className="-my-20 mx-auto  flex  h-screen w-full max-w-5xl flex-col items-center justify-center px-4 sm:-my-16 lg:px-0">
+        <div className="-my-20 mx-auto  flex  h-screen w-full max-w-5xl flex-col items-center justify-center px-8 sm:-my-16 lg:px-0">
           <div className="flex flex-col-reverse gap-8 md:flex-row md:gap-16 lg:gap-24">
             <div className="text-center md:text-left">
               <div className="flex justify-center gap-2 md:justify-start">
@@ -74,10 +74,10 @@ const Header = () => {
               Tech Stack
             </p>
             <div className="flex w-auto flex-row gap-4 sm:gap-6 lg:gap-8">
-              <FaReact className="text-2xl text-ReactBlue sm:text-4xl lg:text-5xl" />
-              <FaNodeJs className="text-2xl text-NodeGreen sm:text-4xl lg:text-5xl" />
-              <IoLogoJavascript className="text-2xl text-JavascriptYellow sm:text-4xl lg:text-5xl" />
-              <SiTailwindcss className="text-2xl text-TailwindBlue sm:text-4xl lg:text-5xl" />
+              <FaReact className="text-3xl text-ReactBlue sm:text-4xl lg:text-5xl" />
+              <FaNodeJs className="text-3xl text-NodeGreen sm:text-4xl lg:text-5xl" />
+              <IoLogoJavascript className="text-3xl text-JavascriptYellow sm:text-4xl lg:text-5xl" />
+              <SiTailwindcss className="text-3xl text-TailwindBlue sm:text-4xl lg:text-5xl" />
             </div>
           </div>
         </div>
