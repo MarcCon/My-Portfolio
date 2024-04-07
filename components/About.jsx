@@ -3,10 +3,10 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="bg-darkblue pb-24 pt-48">
+      <div className="bg-darkblue md:mb-24 mb-44 pt-48">
         <div
           id="about"
-          className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-16 px-4 pb-4 sm:px-16 sm:pb-48 lg:flex-row lg:px-6  "
+          className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-16 px-4 pb-4 sm:px-16 sm:pb-48 lg:flex-row lg:px-4  "
         >
           <img
             src="/ich.JPG"
@@ -20,7 +20,7 @@ const About = () => {
             <h2 className="pb-4 text-center text-2xl font-extrabold text-white lg:text-left lg:text-3xl">
               React Front-End Entwickler in Halle (Saale) 📍
             </h2>
-            <p className=" text-center text-lg font-thin text-white sm:text-xl lg:text-left lg:text-2xl">
+            <p className=" text-center text-lg font-thin text-gray-300 sm:text-xl lg:text-left lg:text-2xl">
               Hi, mein Name ist Marc, ich entwickle mithilfe von React und
               Tailwind funktionale Web-Anwendungen.
             </p>

@@ -4,17 +4,55 @@ import Project from "./Project";
 function Portfolio() {
   return (
     <>
-      <div
-        id="portfolio"
-        className="mx-auto flex max-w-5xl flex-col items-center justify-center px-4 sm:px-16 lg:px-0 2xl:pt-16 pb-16"
-      >
+      <div className="mx-auto text-center  max-w-5xl md:px-4 px-8  ">
         <h2 className="font-inter font-extrabold text-mypurple sm:text-2xl">
           Portfolio
         </h2>
-        <h2 className="mb-8 font-inter text-3xl font-extrabold text-white sm:text-4xl">
+        <h2 className="mb-8 md:mb-16 font-inter text-3xl font-extrabold text-white sm:text-4xl">
           Meine Zeitreise
         </h2>
-        <div className="w-full">
+      </div>
+
+      <div className="mb-32 flex md:flex-row flex-col justify-between max-w-5xl mx-auto gap-16 md:gap-0">
+        <div className="flex-1 min-w-0">
+          <div className="w-full px-8 md:px-4 flex flex-col">
+            <a
+              href="https://www.larakuche-fotografie.de"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/lara.svg" className="max-w-full h-auto" />
+            </a>
+
+            <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
+              Landing Page
+            </h2>
+            <p className="text-gray-300 text-base md:text-lg font-thin">
+              Eine responsive Landing Page für eine Fotografin.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex-1 min-w-0">
+          <div className="w-full px-8 md:px-4 flex flex-col">
+            <a
+              href="https://github.com/MarcCon/NomadNexus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/nomad.svg" className="max-w-full h-auto" />
+            </a>
+            <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
+              Reiseprotokol
+            </h2>
+            <p className="text-gray-300 md:text-lg text-base font-thin">
+              Eine Anwendung zum protokollieren von Städtetrips.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="w-full">
           <Project
             imageSrc="/landingPage.png"
             imageAlt="Bild der LandingPage"
@@ -36,8 +74,7 @@ function Portfolio() {
             externalLink="https://github.com/MarcCon/NomadNexus"
             imageOnLeft={false}
           />
-        </div>
-      </div>
+        </div> */}
     </>
   );
 }
