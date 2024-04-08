@@ -43,7 +43,7 @@ function Portfolio() {
               <img src="/nomad.png" className="max-w-full h-auto" />
             </a>
             <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
-              Reiseprotokol
+              Reiseprotokoll
             </h2>
             <p className="text-gray-300 md:text-lg text-base font-thin">
               Eine Anwendung zum protokollieren von Städtetrips.
