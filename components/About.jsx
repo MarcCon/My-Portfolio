@@ -9,8 +9,9 @@ const About = () => {
           className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-16 pb-4 sm:px-16 sm:pb-48 lg:flex-row lg:px-4  "
         >
           <img
-            src="/ich.JPG"
-            className="h-[300px] w-auto rounded-2xl xl:h-[400px] 2xl:h-[500px]"
+            src="/aboutPic.jpg"
+            className="h-[300px] w-auto rounded-2xl xl:h-[360px] 2xl:h-[400px]"
+            alt="Bild von mir"
           />
 
           <div>

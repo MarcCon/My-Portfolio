@@ -21,7 +21,11 @@ function Portfolio() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/lara.png" className="max-w-full h-auto" />
+              <img
+                src="/lara.png"
+                className="max-w-full h-auto"
+                alt="Landing Page Fotografin"
+              />
             </a>
 
             <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
@@ -40,7 +44,11 @@ function Portfolio() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/nomad.png" className="max-w-full h-auto" />
+              <img
+                src="/nomad.png"
+                className="max-w-full h-auto"
+                alt="Nomad Nexus"
+              />
             </a>
             <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
               Reiseprotokoll

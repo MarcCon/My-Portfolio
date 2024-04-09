@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import "../styles/globals.css";
+import Footer from "@/components/Footer";
 
 function Datenschutz() {
   return (
     <div className="bg-darkblue text-white">
       <Navbar />
       <div className="flex justify-center">
-        <div className="w-[800px] content-center pt-44 text-center">
+        <div className="max-w-5xl content-center mt-44 text-center">
           <h1 className="text-bold pb-8 text-3xl">
             Datenschutz&shy;erkl&auml;rung
           </h1>
@@ -399,6 +401,9 @@ function Datenschutz() {
           </p>
           <p></p>
         </div>
+      </div>
+      <div className="bg-zinc-900 mt-16">
+        <Footer />
       </div>
     </div>
   );
