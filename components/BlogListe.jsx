@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "./BlogCard"; // Stelle sicher, dass der Pfad korrekt ist
 
-const graphcms = new GraphQLClient(
-  "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clujty5g501da08wb7ugbcgwx/master"
-);
+const graphcms = new GraphQLClient(process.env.GRAPHQL_ENDPOINT);
 
 const QUERY = gql`
   {

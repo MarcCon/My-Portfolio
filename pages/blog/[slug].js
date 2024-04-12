@@ -7,9 +7,7 @@ import Footer from "@/components/Footer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
-const graphcms = new GraphQLClient(
-  "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clujty5g501da08wb7ugbcgwx/master"
-);
+const graphcms = new GraphQLClient(process.env.GRAPHQL_ENDPOINT);
 
 const QUERY = gql`
   query Post($slug: String!) {
