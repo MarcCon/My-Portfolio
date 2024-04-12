@@ -34,6 +34,22 @@ function Portfolio() {
             <p className="text-gray-300 text-base md:text-lg font-thin">
               Eine responsive Landing Page für eine Fotografin.
             </p>
+            <div className="flex gap-4 text-gray-300 font-thin underline ">
+              <a
+                href="https://www.larakuche-fotografie.de"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Website
+              </a>
+              <a
+                href="https://github.com/MarcCon/LandingPage-Fotografin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
 
@@ -56,6 +72,15 @@ function Portfolio() {
             <p className="text-gray-300 md:text-lg text-base font-thin">
               Eine Anwendung zum protokollieren von Städtetrips.
             </p>
+            <div className="flex gap-4 text-gray-300 font-thin underline ">
+              <a
+                href="https://github.com/MarcCon/NomadNexus"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>
