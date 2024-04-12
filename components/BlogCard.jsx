@@ -12,7 +12,7 @@ const BlogCard = ({ title, coverPhoto, datePublished, slug }) => {
       <Link href={"/blog/" + slug}>
         <div className="p-4">
           <img
-            className="w-full lg:h-48 h-32 object-cover rounded-lg"
+            className="w-full  object-cover object-center rounded-lg"
             src={coverPhoto.url}
             alt={title}
           />
