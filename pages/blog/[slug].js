@@ -1,8 +1,11 @@
+import { useEffect } from "react";
 import { GraphQLClient, gql } from "graphql-request";
 import "../../styles/globals.css";
 import Navbar from "@/components/Navbar";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import Footer from "@/components/Footer";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const graphcms = new GraphQLClient(
   "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clujty5g501da08wb7ugbcgwx/master"
@@ -34,9 +37,6 @@ const SLUGLIST = gql`
   }
 `;
 
-const sharedClasses = "";
-const bodyClasses = "";
-
 const renderers = {
   h1: ({ children }) => (
     <h1 className="lg:text-5xl text-3xl font-extrabold mb-4 text-white">
@@ -44,15 +44,37 @@ const renderers = {
     </h1>
   ),
   h2: ({ children }) => (
-    <h2 className="lg:text-3xl text-xl mb-4 font-extrabold  text-white">
+    <h2 className="lg:text-3xl text-xl mb-4 font-extrabold text-white">
       {children}
     </h2>
   ),
   p: ({ children }) => (
-    <p className="my-4 leading-8 text-base lg:text-xl font-thin text-gray-300">
-      {children}
-    </p>
+    <p className=" text-base lg:text-xl  font-thin text-gray-300">{children}</p>
   ),
+
+  a: ({ children, href }) => (
+    <a
+      href={href}
+      target="_blank"
+      className="text-blue-500 hover:text-blue-800"
+    >
+      {children}
+    </a>
+  ),
+
+  code_block: ({ children }) => {
+    const codeString = children.props.content[0].text;
+
+    return (
+      <SyntaxHighlighter
+        language="javascript"
+        style={nightOwl}
+        className="rounded-lg"
+      >
+        {codeString}
+      </SyntaxHighlighter>
+    );
+  },
 };
 
 export async function getStaticPaths() {
@@ -66,7 +88,9 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const slug = params.slug;
   const data = await graphcms.request(QUERY, { slug });
+
   const post = data.post;
+
   return {
     props: {
       post,
@@ -76,6 +100,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPost({ post }) {
+  useEffect(() => {}, [post]);
   return (
     <>
       <Navbar />
@@ -105,17 +130,13 @@ export default function BlogPost({ post }) {
               alt={post.title}
               className="w-full h-auto rounded-lg"
             />
-          </main>
 
-          <div>
             <div className="pb-16">
               <RichText content={post.content.raw} renderers={renderers} />
             </div>
-          </div>
+          </main>
         </div>
-        <div className="bg-zinc-900">
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </>
   );

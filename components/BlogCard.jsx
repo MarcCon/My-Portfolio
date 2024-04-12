@@ -8,7 +8,7 @@ const BlogCard = ({ title, coverPhoto, datePublished, slug }) => {
     year: "numeric",
   });
   return (
-    <div className="lg:max-w-sm max-w-64 rounded-xl overflow-hidden shadow-lg m-4 bg-lightblue mb-16">
+    <div className="lg:w-80 w-72 rounded-xl shadow-lg bg-lightblue">
       <Link href={"/blog/" + slug}>
         <div className="p-4">
           <img
@@ -26,7 +26,6 @@ const BlogCard = ({ title, coverPhoto, datePublished, slug }) => {
           {title}
         </div>
         <Link href={"/blog/" + slug}>
-          {" "}
           <button className="text-white border text-xs rounded-xl py-1 px-4">
             Mehr Lesen
           </button>
