@@ -47,7 +47,9 @@ const renderers = {
     </h2>
   ),
   p: ({ children }) => (
-    <p className=" text-base lg:text-xl  font-thin text-gray-300">{children}</p>
+    <p className=" text-base lg:text-xl  font-normal text-gray-300">
+      {children}
+    </p>
   ),
 
   a: ({ children, href }) => (
