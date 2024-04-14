@@ -40,9 +40,7 @@ const BlogListe = () => {
   return (
     <div className="flex justify-center gap-16 flex-wrap mb-72">
       {posts.map((post, index) => {
-        // Überprüfe, ob es xs ist und ob es das letzte Element ist
         if (isXs) {
-          // Bei xs, nur das letzte Element rendern
           if (index === posts.length - 1) {
             return (
               <BlogCard
@@ -56,7 +54,6 @@ const BlogListe = () => {
           }
           return null;
         } else {
-          // Bei Nicht-xs, alle Elemente rendern
           return (
             <BlogCard
               key={post.id}
