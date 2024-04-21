@@ -36,9 +36,9 @@ function Portfolio() {
         </div>
         <div className=" px-2">
           <Project
-            websiteUrl="https://www.larakuche-fotografie.de"
+            websiteUrl="https://mute-it.vercel.app/"
             imageUrl="/bleep.png"
-            projectUrl="https://www.larakuche-fotografie.de"
+            projectUrl="https://mute-it.vercel.app/"
             title="SaaS"
             description="Ein Online Tool zum zensieren von Videos."
           />
