@@ -41,30 +41,15 @@ const BlogListe = () => {
     <div className="max-w-5xl mx-auto">
       <div className=" flex justify-center gap-16 flex-wrap mb-44">
         {posts.map((post, index) => {
-          if (isXs) {
-            if (index === posts.length - 1) {
-              return (
-                <BlogCard
-                  key={post.id}
-                  title={post.title}
-                  coverPhoto={post.coverPhoto}
-                  datePublished={post.datePublished}
-                  slug={post.slug}
-                />
-              );
-            }
-            return null;
-          } else {
-            return (
-              <BlogCard
-                key={post.id}
-                title={post.title}
-                coverPhoto={post.coverPhoto}
-                datePublished={post.datePublished}
-                slug={post.slug}
-              />
-            );
-          }
+          return (
+            <BlogCard
+              key={post.id}
+              title={post.title}
+              coverPhoto={post.coverPhoto}
+              datePublished={post.datePublished}
+              slug={post.slug}
+            />
+          );
         })}
       </div>
     </div>
