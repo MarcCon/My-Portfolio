@@ -49,7 +49,7 @@ function Portfolio() {
             imageUrl="/extension.png"
             githubUrl="https://github.com/MarcCon/Tailwind-Chrome-Extension"
             title="Chrome Extension"
-            description="Ein Online Tool zum zensieren von Videos."
+            description="Eine Google Chrome Extension für TailwindCSS."
           />
         </div>
       </div>
