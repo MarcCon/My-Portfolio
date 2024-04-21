@@ -4,7 +4,7 @@ import Project from "./Project";
 function Portfolio() {
   return (
     <>
-      <div className="mx-auto text-center  max-w-5xl md:px-4 px-8  ">
+      <div className="mx-auto text-center max-w-5xl md:px-4 px-8">
         <h2 className="font-inter font-extrabold text-mypurple sm:text-2xl">
           Portfolio
         </h2>
@@ -13,101 +13,46 @@ function Portfolio() {
         </h2>
       </div>
 
-      <div className="mb-32 flex md:flex-row flex-col justify-between max-w-5xl mx-auto gap-16 md:gap-0">
-        <div className="flex-1 min-w-0">
-          <div className="w-full px-8 md:px-4 flex flex-col">
-            <a
-              href="https://www.larakuche-fotografie.de"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/lara.png"
-                className="max-w-full h-auto"
-                alt="Landing Page Fotografin"
-              />
-            </a>
-
-            <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
-              Landing Page
-            </h2>
-            <p className="text-gray-300 text-base md:text-lg font-thin">
-              Eine responsive Landing Page für eine Fotografin.
-            </p>
-            <div className="flex gap-4 text-gray-300 font-thin underline ">
-              <a
-                href="https://www.larakuche-fotografie.de"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Website
-              </a>
-              <a
-                href="https://github.com/MarcCon/LandingPage-Fotografin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
+      <div className="mb-32 grid md:grid-cols-2 grid-cols-1 justify-center max-w-5xl mx-auto gap-8 md:gap-8">
+        <div className=" px-2">
+          <Project
+            imageUrl="/lara.png"
+            websiteUrl="https://www.larakuche-fotografie.de"
+            projectUrl="https://www.larakuche-fotografie.de"
+            githubUrl="https://github.com/MarcCon/LandingPage-Fotografin"
+            title="Landing Page"
+            description="Eine responsive Landing Page für eine Fotografin."
+          />
         </div>
-
-        <div className="flex-1 min-w-0">
-          <div className="w-full px-8 md:px-4 flex flex-col">
-            <a
-              href="https://github.com/MarcCon/NomadNexus"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/nomad.png"
-                className="max-w-full h-auto"
-                alt="Nomad Nexus"
-              />
-            </a>
-            <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
-              Reiseprotokoll
-            </h2>
-            <p className="text-gray-300 md:text-lg text-base font-thin">
-              Eine Anwendung zum protokollieren von Städtetrips.
-            </p>
-            <div className="flex gap-4 text-gray-300 font-thin underline ">
-              <a
-                href="https://github.com/MarcCon/NomadNexus"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
+        <div className=" px-2">
+          <Project
+            websiteUrl="https://github.com/MarcCon/NomadNexus"
+            imageUrl="/nomad.png"
+            projectUrl=""
+            githubUrl="https://github.com/MarcCon/NomadNexus"
+            title="Reiseprotokoll"
+            description="Eine Anwendung zum Protokollieren von Städtetrips."
+          />
+        </div>
+        <div className=" px-2">
+          <Project
+            websiteUrl="https://www.larakuche-fotografie.de"
+            imageUrl="/bleep.png"
+            projectUrl="https://www.larakuche-fotografie.de"
+            title="SaaS"
+            description="Ein Online Tool zum zensieren von Videos."
+          />
+        </div>
+        <div className=" px-2">
+          <Project
+            websiteUrl="https://github.com/MarcCon/Tailwind-Chrome-Extension"
+            imageUrl="/extension.png"
+            githubUrl="https://github.com/MarcCon/Tailwind-Chrome-Extension"
+            title="Chrome Extension"
+            description="Ein Online Tool zum zensieren von Videos."
+          />
         </div>
       </div>
-
-      {/* <div className="w-full">
-          <Project
-            imageSrc="/landingPage.png"
-            imageAlt="Bild der LandingPage"
-            title="Landing Page"
-            technologies={["React", "Tailwind"]}
-            description="Eine vollständig responsive Website für eine Fotografin"
-            githubLink="https://github.com/MarcCon/LandingPage-Fotografin"
-            externalLink="https://larakuche-fotografie.de"
-            imageOnLeft={true}
-          />
-
-          <Project
-            imageSrc="/NomadNexus.png"
-            imageAlt="Bild meines Projekts"
-            title="Reisetagebuch"
-            technologies={["React", "CSS "]}
-            description="Eine Website zum tracken von Reisen."
-            githubLink="https://github.com/MarcCon/NomadNexus"
-            externalLink="https://github.com/MarcCon/NomadNexus"
-            imageOnLeft={false}
-          />
-        </div> */}
     </>
   );
 }
