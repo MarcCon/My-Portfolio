@@ -3,18 +3,20 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="bg-darkblue md:mb-24 mb-44 pt-48 px-8">
+      <div className="bg-darkblue md:mb-0 mb-44 pt-48 px-8">
         <div
           id="about"
-          className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-16 pb-4 sm:px-16 sm:pb-48 lg:flex-row lg:px-4  "
+          className="mx-auto flex max-w-5xl flex-col justify-center gap-8 pb-4 sm:px-4 sm:pb-48 md:flex-row lg:px-4  "
         >
           <img
-            src="/aboutPic.jpg"
-            className="h-[300px] w-auto rounded-2xl xl:h-[360px] 2xl:h-[400px]"
-            alt="Bild von mir"
+            src="/Mittel.png"
+            className=" h-[170px] w-[170px]   border border-gray-600 rounded-xl"
+            alt="Bild von Marc"
+            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={(e) => e.preventDefault()}
           />
 
-          <div>
+          <div className="border rounded-3xl p-8 border-gray-600">
             <p className="text-center font-inter text-xl font-extrabold text-mypurple lg:text-left lg:text-2xl">
               Über mich
             </p>
@@ -22,10 +24,16 @@ const About = () => {
               React Front-End Entwickler in Halle (Saale) 📍
             </h2>
             <p className=" text-center text-lg font-thin text-gray-300 sm:text-xl lg:text-left lg:text-2xl">
-              Hi, mein Name ist Marc, ich entwickle mithilfe von React und
-              Tailwind funktionale Web-Anwendungen.
+              Hi, mein Name ist Marc. Ich arbeite hauptsächlich mit React,
+              NextJs und Tailwind, bin jedoch flexibel und offen dafür, mich in
+              neue Technologien einzuarbeiten.
+              <br />
+              <br /> Neben der Softwareentwicklung habe ich ebenfalls ein Auge
+              für modernes und sauberes UI/UX-Design.
+              <br />
+              <br />
+              Aktuell studiere ich Wirtschaftsinformatik im Master.
             </p>
-            <p className="text-inter pb-8 pt-4 text-center text-lg font-thin text-white sm:text-xl lg:text-left lg:text-2xl xl:pt-8"></p>
           </div>
         </div>
       </div>

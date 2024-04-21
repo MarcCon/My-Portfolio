@@ -6,7 +6,7 @@ import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 import "../styles/globals.css";
 import BlogCard from "@/components/BlogCard";
-import BlogListe from "@/components/BlogListe";
+import BlogListeHome from "@/components/BlogListeHome";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
               Aktuelle Beiträge
             </h2>
           </div>
-          <BlogListe />
+          <BlogListeHome />
 
           <Portfolio />
         </div>
