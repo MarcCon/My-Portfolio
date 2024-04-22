@@ -74,7 +74,7 @@ const BlogListeHome = () => {
 
         <Link
           href="blog"
-          className="w-80 border border-gray-600 rounded-xl hidden md:hidden lg:flex justify-center items-center p-4"
+          className="w-80 border border-gray-600 rounded-xl hidden md:hidden lg:flex justify-center items-center p-4 hover:bg-gray-900 transition ease-in-out duration-300"
         >
           <p className="text-2xl text-white font-thin">Mehr lesen </p>
           <IoIosArrowForward className="text-white text-3xl" />
