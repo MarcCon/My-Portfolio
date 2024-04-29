@@ -16,7 +16,7 @@ const About = () => {
             onDragStart={(e) => e.preventDefault()}
           />
 
-          <div className="border rounded-3xl p-8 border-gray-600">
+          <div className="border rounded-3xl sm:p-8 p-4 border-gray-600">
             <p className="text-center font-inter text-xl font-extrabold text-mypurple lg:text-left lg:text-2xl">
               Über mich
             </p>
