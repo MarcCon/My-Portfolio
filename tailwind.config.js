@@ -16,6 +16,7 @@ module.exports = {
         TailwindBlue: "rgb(49,181,247)",
         NodeGreen: "rgb(72,148,57)",
         JavascriptYellow: "rgb(238,215,69)",
+        TypeScriptBlue: "rgb(69,119,193)",
       },
 
       boxShadow: {

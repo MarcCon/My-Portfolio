@@ -7,6 +7,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import Image from "next/image";
+import { SiTypescript } from "react-icons/si";
 
 const Header = () => {
   return (
@@ -74,10 +75,10 @@ const Header = () => {
               Tech Stack
             </p>
             <div className="flex w-auto flex-row gap-4 sm:gap-6 lg:gap-8">
+              <SiTypescript className="text-3xl text-TypeScriptBlue sm:text-4xl lg:text-5xl bg-white rounded-md" />
               <FaReact className="text-3xl text-ReactBlue sm:text-4xl lg:text-5xl" />
               <FaNodeJs className="text-3xl text-NodeGreen sm:text-4xl lg:text-5xl" />
-              <IoLogoJavascript className="text-3xl text-JavascriptYellow sm:text-4xl lg:text-5xl" />
-              <SiTailwindcss className="text-3xl text-TailwindBlue sm:text-4xl lg:text-5xl" />
+              <SiTailwindcss className="text-3xl text-TailwindBlue sm:text-4xl lg:text-5xl " />
             </div>
           </div>
         </div>
