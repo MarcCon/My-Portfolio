@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -23,7 +24,7 @@ const MobilNav = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed left-0 right-0 top-[80px] z-50 h-[250px] bg-darkblue p-5 pt-8"
+            className="fixed left-0 right-0 top-[80px] z-50 h-[250px]  p-5 pt-8"
           >
             <ul className="justify-center space-y-8 text-center font-inter text-2xl text-white">
               <li>

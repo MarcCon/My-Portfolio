@@ -9,7 +9,7 @@ function Project({
   description,
 }) {
   return (
-    <div className="w-full px-8 md:px-4 flex flex-col">
+    <div className="w-full flex flex-col">
       <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
         <img src={imageUrl} className="max-w-full h-auto" alt={title} />
       </a>
