@@ -9,13 +9,13 @@ const About = () => {
       >
         <img
           src="/Mittel.png"
-          className=" h-[170px] w-[170px]   border border-gray-600 rounded-xl"
+          className=" h-[150px] w-[150px]   border border-neutral-600 rounded-xl"
           alt="Bild von Marc"
         />
 
-        <div className="border rounded-3xl sm:p-8 p-4 border-gray-600">
+        <div className="border rounded-3xl sm:p-8 p-4 border-neutral-600">
           <h2 className="pb-4 text-2xl  text-white ">Hi, ich bin Marc</h2>
-          <p className=" text-lg text-gray-300">
+          <p className=" text-lg text-neutral-400">
             Hi, mein Name ist Marc. Ich arbeite hauptsächlich mit React, NextJs
             und Tailwind, bin jedoch flexibel und offen dafür, mich in neue
             Technologien einzuarbeiten.

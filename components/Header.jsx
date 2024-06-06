@@ -22,7 +22,7 @@ const Header = () => {
             <h1 className="font-inter text-3xl font-extrabold text-white sm:text-4xl lg:text-6xl">
               Front-End Developer
             </h1>
-            <h2 className="pt-2 tracking-wide font-thin text-lg text-white lg:pt-4 lg:text-2xl">
+            <h2 className="pt-2 text-lg text-white lg:pt-4 lg:text-2xl">
               Hi, ich bin Marc, Front-End Entwickler aus Halle (Saale).
             </h2>
             <div className="flex flex-row justify-center gap-4 pt-4 md:justify-start">

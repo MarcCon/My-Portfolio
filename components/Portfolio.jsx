@@ -4,7 +4,7 @@ import Project from "./Project";
 function Portfolio() {
   return (
     <div>
-      <h2 className="text-4xl text-white">Meine Projekte</h2>
+      <h2 className="text-4xl text-white mb-8">Meine Projekte</h2>
 
       <div className="grid md:grid-cols-2 grid-cols-1 justify-center max-w-5xl gap-16">
         <Project
