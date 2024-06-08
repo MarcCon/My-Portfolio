@@ -16,17 +16,25 @@ function Project({
       <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
         {title}
       </h2>
-      <p className="text-gray-300 text-base md:text-lg font-thin">
-        {description}
-      </p>
-      <div className="flex gap-4 text-gray-300 font-thin underline">
+      <p className="text-neutral-400 text-base md:text-lg">{description}</p>
+      <div className="flex gap-4 text-neutral-400 underline mt-2 ">
         {projectUrl && (
-          <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+          <a
+            href={projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white hover:unterline-white"
+          >
             Website
           </a>
         )}
         {githubUrl && (
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white hover:unterline-white"
+          >
             GitHub
           </a>
         )}

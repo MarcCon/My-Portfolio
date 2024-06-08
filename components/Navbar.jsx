@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import MobilNav from "./MobilNav";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,6 +25,8 @@ const Navbar = () => {
     };
   }, []);
 
+  const path = usePathname();
+
   return (
     <>
       <nav
@@ -41,13 +44,37 @@ const Navbar = () => {
 
         <div className="hidden gap-12 sm:flex">
           <Link href="/">
-            <p className="cursor-pointer">Home</p>
+            <p
+              className={`${
+                path === "/"
+                  ? "underline underline-offset-8 text-white"
+                  : "text-neutral-400  hover:underline hover:underline-offset-8"
+              }`}
+            >
+              Home
+            </p>
           </Link>
           <Link href="/projekte">
-            <p className="cursor-pointer">Projekte</p>
+            <p
+              className={`${
+                path === "/projekte"
+                  ? "underline underline-offset-8 text-white"
+                  : "text-neutral-400 hover:underline hover:underline-offset-8"
+              }`}
+            >
+              Projekte
+            </p>
           </Link>
           <Link href="/blog">
-            <p className="cursor-pointer">Blog</p>
+            <p
+              className={`${
+                path === "/blog"
+                  ? "underline underline-offset-8 text-white"
+                  : "text-neutral-400  hover:underline hover:underline-offset-8 "
+              }`}
+            >
+              Blog
+            </p>
           </Link>
         </div>
 

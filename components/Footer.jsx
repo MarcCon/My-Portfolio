@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { CiMail } from "react-icons/ci";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -7,6 +8,14 @@ const Footer = () => {
     <div className=" py-8 border-t border-neutral-700 mt-36">
       <div className="max-w-5xl mx-auto pt-8 flex justify-between">
         <div>
+          <Image
+            width={0}
+            height={0}
+            sizes="100%"
+            src="/Mittel.png"
+            className="w-[100px] h-[100px]   border border-neutral-600 rounded-xl -mt-[120px] mb-[20px]"
+            alt="Bild von Marc"
+          />{" "}
           <p className="text-white text-lg">Hi, ich bin Marc</p>
           <p className="text-neutral-400 text-lg mb-4">Ich entwickle Webapps</p>
           <div className="flex gap-4">

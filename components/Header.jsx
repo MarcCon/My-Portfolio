@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 const Header = () => {
   return (
     <>
-      <div className="mt-44">
+      <div className="mt-32">
         <div className="flex flex-col-reverse gap-8 md:flex-row md:gap-16 lg:gap-24">
           <div className="flex-1 text-center md:text-left">
             <div className="flex justify-center gap-2 md:justify-start">
@@ -19,11 +19,11 @@ const Header = () => {
               <div className="h-[10px] w-[100px] bg-gradient-to-r from-purple-400 to-pink-300 lg:h-[15px] lg:w-[250px]"></div>
             </div>
 
-            <h1 className="font-inter text-3xl font-extrabold text-white sm:text-4xl lg:text-6xl">
+            <h1 className="font-inter text-3xl font-bold text-white sm:text-4xl lg:text-6xl">
               Front-End Developer
             </h1>
-            <h2 className="pt-2 text-lg text-white lg:pt-4 lg:text-2xl">
-              Hi, ich bin Marc, Front-End Entwickler aus Halle (Saale).
+            <h2 className="pt-2 text-lg text-white font-light lg:pt-4 lg:text-2xl">
+              Hi, ich bin Marc, Front-End Entwickler aus Leipzig.
             </h2>
             <div className="flex flex-row justify-center gap-4 pt-4 md:justify-start">
               <a
@@ -64,22 +64,22 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-between w-full mt-16">
+        <div className="flex flex-row gap-24 w-full mt-16">
           <div>
             <p className="text-white">Nextjs und Sanity</p>
             <p className="text-neutral-400">Tech Stack</p>
           </div>
           <div>
-            <p className="text-white">Nextjs und Sanity</p>
-            <p className="text-neutral-400">Tech Stack</p>
+            <p className="text-white">Leipzig</p>
+            <p className="text-neutral-400">Ort</p>
           </div>
           <div>
-            <p className="text-white">Nextjs und Sanity</p>
-            <p className="text-neutral-400">Tech Stack</p>
+            <p className="text-white">Deutsch & Englisch</p>
+            <p className="text-neutral-400">Sprachen</p>
           </div>
           <div>
-            <p className="text-white">Nextjs und Sanity</p>
-            <p className="text-neutral-400">Tech Stack</p>
+            <p className="text-white">Webapps & KI</p>
+            <p className="text-neutral-400">Expertise</p>
           </div>
         </div>
       </div>

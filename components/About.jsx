@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -7,9 +8,12 @@ const About = () => {
         id="about"
         className="mx-auto flex max-w-5xl flex-col justify-center gap-8 pb-4 sm:px-4 md:flex-row lg:px-4  "
       >
-        <img
+        <Image
+          width={0}
+          height={0}
+          sizes="100%"
           src="/Mittel.png"
-          className=" h-[150px] w-[150px]   border border-neutral-600 rounded-xl"
+          className="w-[150px] h-[150px]   border border-neutral-600 rounded-xl"
           alt="Bild von Marc"
         />
 

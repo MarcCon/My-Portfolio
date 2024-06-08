@@ -1,16 +1,10 @@
+import Project from "@/components/Project";
 import React from "react";
 
 const page = () => {
   return (
-    <>
-      <div className="mx-auto text-center max-w-5xl md:px-4 px-8">
-        <h2 className="font-inter font-extrabold text-mypurple sm:text-2xl">
-          Portfolio
-        </h2>
-        <h2 className="mb-8 md:mb-16 font-inter text-3xl font-extrabold text-white sm:text-4xl">
-          Meine Zeitreise
-        </h2>
-      </div>
+    <div className="mx-auto max-w-5xl mt-32">
+      <h2 className="text-4xl text-white mb-8">Meine Projekte</h2>
 
       <div className="mb-32 grid md:grid-cols-2 grid-cols-1 justify-center max-w-5xl mx-auto gap-8 md:gap-8">
         <div className=" px-2">
@@ -52,7 +46,7 @@ const page = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
