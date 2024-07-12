@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`z-50 bg-black sticky left-0 top-0 flex w-full items-center justify-between 2xl:p-8 sm:p-6 p-4 text-base font-medium text-white sm:px-16 sm:text-xl transition duration-300 ease-in-out ${
+        className={`z-50 bg-[#161616] sticky left-0 top-0 flex w-full items-center justify-between 2xl:p-8 sm:p-6 p-4 text-base font-medium text-white sm:px-16 sm:text-xl transition duration-300 ease-in-out ${
           scrolled
             ? "border-b border-neutral-700"
             : "border-b border-transparent"

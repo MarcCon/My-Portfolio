@@ -8,15 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkblue: "rgb(5,4,19)",
-        lightblue: "rgb(21,35,60)",
-        mypurple: "rgb(238,130,238, .7)",
-        projectblue: "rgb(18,15,55)",
-        ReactBlue: "rgb(0 216 255)",
-        TailwindBlue: "rgb(49,181,247)",
-        NodeGreen: "rgb(72,148,57)",
-        JavascriptYellow: "rgb(238,215,69)",
-        TypeScriptBlue: "rgb(69,119,193)",
+        mainGray: "#A4A4A4",
+        borderGray: "#353535",
+        fillGray: "#1A1A1A",
       },
 
       boxShadow: {
