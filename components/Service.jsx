@@ -11,7 +11,7 @@ const Service = () => {
       <div className="pb-6 p-4 sm:p-6">
         <h2 className="text-2xl  text-white">Expertise</h2>
         <p className="text-lg text-neutral-400 mb-6 sm:mb-12">
-          Meine Fähigkeiten im Überblick.
+          An overview of my skills.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-8 mt-4 ">
           <div className="flex items-start p-2 gap-4 hover:bg-[#323232] rounded-xl transition ease-in-out duration-200">
@@ -21,7 +21,7 @@ const Service = () => {
             <div>
               <h3 className="text-lg text-white">Websites</h3>
               <p className="text-neutral-400">
-                Benutzerfreundliche Websites, die Besucher begeistern
+                User-friendly websites that inspire visitors
               </p>
             </div>
           </div>
@@ -32,8 +32,7 @@ const Service = () => {
             <div>
               <h3 className="text-lg text-white">Testing</h3>
               <p className="text-neutral-400">
-                Immer aktuell und sichtbar. Optimiert für maximale
-                Online-Präsenz
+                Ensuring software quality and performance.
               </p>
             </div>
           </div>
@@ -44,7 +43,7 @@ const Service = () => {
             <div>
               <h3 className="text-lg text-white">SaaS-Development</h3>
               <p className="text-neutral-400">
-                Individuelle Softwarelösungen für alle Anforderungen
+                Customized software solutions for all requirements.
               </p>
             </div>
           </div>
@@ -55,19 +54,19 @@ const Service = () => {
             <div>
               <h3 className="text-lg text-white">KI-Integration</h3>
               <p className="text-neutral-400">
-                Prozessoptimierung mithilfe künstlicher Intelligenz
+                Process optimization with the help of artificial intelligence.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-8 p-4 sm:p-8 bg-fillGray border-t border-borderGray flex flex-col sm:flex-row justify-between items-center">
+      <div className="mt-8 p-4 sm:p-8 rounded-xl bg-fillGray border-t border-borderGray flex flex-col sm:flex-row justify-between items-center">
         <div className="text-center sm:text-left mb-4 sm:mb-0">
-          <h3 className="text-lg text-white">Lass uns ein Projekt starten!</h3>
-          <p className="text-neutral-400">Gemeinsam Ideen verwirklichen.</p>
+          <h3 className="text-lg text-white">Want to work together?</h3>
+          <p className="text-neutral-400">Let's realize ideas.</p>
         </div>
         <button className="border border-borderGray text-white px-4 py-2 rounded-lg">
-          Schreib mir
+          Write me
         </button>
       </div>
     </div>

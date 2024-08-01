@@ -6,7 +6,6 @@ import { CgQuote } from "react-icons/cg";
 const BlogTestimonial = () => {
   return (
     <div className="mx-auto max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-8">
-      {/* Blog Section */}
       <div className="bg-fillGray p-6 sm:p-8 rounded-xl border border-borderGray flex flex-col justify-between">
         <div className="flex flex-col items-start gap-4">
           <div className="bg-[#323232] p-2 rounded-xl">
@@ -16,25 +15,23 @@ const BlogTestimonial = () => {
           <div>
             <h3 className="text-lg text-white">Blog</h3>
             <p className="text-neutral-400">
-              Hier teile ich meine Interessen und spannende Case Studies aus
-              meinen Projekten.
+              Case studies and everything that interests me.
             </p>
           </div>
         </div>
         <button className="bg-neutral-800 text-white px-4 py-2 mt-4 rounded-lg self-start">
-          Mehr
+          More
         </button>
       </div>
 
-      {/* Testimonial Section */}
       <div className="bg-fillGray p-6 sm:p-8 rounded-xl border border-borderGray">
-        <CgQuote className="text-6xl text-white" />
+        {/* <CgQuote className="text-6xl text-white" /> */}
 
         <blockquote className="text-neutral-400 mb-4 mt-4">
-          <p>
-            Die Zusammenarbeit mit Marc an den MVPs für Moouv und Eventbusters
+          <p className="italic">
+            "Die Zusammenarbeit mit Marc an den MVPs für Moouv und Eventbusters
             war klasse. Dank seiner Unterstützung und schnellen Umsetzung
-            konnten wir beide Projekte im Handumdrehen launchen.
+            konnten wir beide Projekte im Handumdrehen launchen."
           </p>
         </blockquote>
         <div className="flex items-center mt-4">

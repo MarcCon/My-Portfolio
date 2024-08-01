@@ -62,7 +62,7 @@ const Navbar = () => {
                   : "text-neutral-400 hover:underline hover:underline-offset-8"
               }`}
             >
-              Projekte
+              Projects
             </p>
           </Link>
           <Link href="/blog">

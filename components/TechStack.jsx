@@ -6,7 +6,7 @@ const TechStack = () => {
     <div className="mx-auto max-w-5xl p-4 sm:p-8 rounded-xl border border-borderGray w-full">
       <h2 className="text-2xl text-white">Tech Stack</h2>
       <p className="text-lg text-neutral-400 mb-6 sm:mb-12">
-        Meine Top Technologien für alle meine Projekte.
+        My top technologies for all my projects.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-8 mt-4">
         <div className="flex items-center gap-4">

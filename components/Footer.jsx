@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="py-8 border-t border-neutral-700 mt-36">
-      <div className="max-w-5xl mx-auto pt-8 flex flex-col sm:flex-row justify-between px-8 md:px-4">
+      <div className="max-w-4xl mx-auto pt-8 flex flex-col sm:flex-row justify-between px-8 md:px-4">
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
           <Image
             width={0}
@@ -18,10 +18,10 @@ const Footer = () => {
             alt="Bild von Marc"
           />
           <p className="text-white text-lg text-center md:text-left">
-            Hi, ich bin Marc
+            Hi, I'm Marc
           </p>
           <p className="text-neutral-400 text-lg text-center md:text-left mb-4">
-            Ich entwickle Websites <br />& Webapps
+            I develop websites <br />& web apps{" "}
           </p>
           <div className="flex gap-4">
             <a href="mailto:kontakt@marcenke.de">

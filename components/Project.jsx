@@ -22,7 +22,7 @@ function Project({
         <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
           <img
             src={imageUrl}
-            className="w-full h-auto rounded-tr-lg rounded-tl-lg"
+            className="w-full h-[280px] rounded-tr-lg rounded-tl-lg"
             alt={title}
           />
         </a>
@@ -32,8 +32,8 @@ function Project({
           {title}
         </h2>
         <p className="text-neutral-400 text-base md:text-lg">{description}</p>
-        <div className="flex gap-4 justify-between pr-4  mt-2">
-          <div className="flex">
+        <div className="flex flex-col gap-4 pr-4 mt-2">
+          <div className="flex gap-4">
             {projectUrl && (
               <a
                 href={projectUrl}
@@ -56,7 +56,7 @@ function Project({
             )}
           </div>
           {tasks && (
-            <div>
+            <div className="flex items-start flex-col gap-2">
               <button
                 onClick={toggleTasks}
                 className="hover:text-white underline text-neutral-400 hover:underline focus:outline-none"
@@ -66,7 +66,7 @@ function Project({
               {showTasks && (
                 <ul className="mt-2 text-sm text-neutral-400">
                   {tasks.map((task, index) => (
-                    <li key={index} className="text-bas">
+                    <li key={index} className="text-base">
                       {task}
                     </li>
                   ))}

@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import "../styles/globals.css";
 import Service from "@/components/Service";
 import BlogTestimonial from "@/components/BlogTestimonial";
-import TechStack from "@/components/TechSteck";
+import TechStack from "@/components/TechStack";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {

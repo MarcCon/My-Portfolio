@@ -39,10 +39,10 @@ const ContactForm = () => {
 
   return (
     <div className="mx-auto max-w-5xl p-4 sm:p-8 bg-fillGray rounded-xl border border-borderGray">
-      <h2 className="text-2xl text-white">Schreib mir einfach.</h2>
+      <h2 className="text-2xl text-white">Just write me.</h2>
       <p className="md:text-lg text-base text-neutral-400 mb-6 sm:mb-12">
-        Ob spannende Projekte oder einfach nur ein Plausch über aktuelle
-        Tech-Trends. Ich freu mich auf deine Nachricht!
+        Whether exciting projects or just a chat about current tech trends. I
+        look forward to hearing from you!
       </p>
       <form
         ref={formRef}
@@ -81,31 +81,31 @@ const ContactForm = () => {
             htmlFor="message"
             className="block text-neutral-400 text-sm mb-2"
           >
-            Nachricht
+            Message
           </label>
           <textarea
             id="message"
             name="message"
             className="w-full h-32 px-3 py-2 text-white bg-neutral-800 border border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-300"
-            placeholder="Schreibe mir..."
+            placeholder="Write me..."
             required
           />
         </div>
         <div className="flex items-center gap-8 lg:gap-16">
           <button
             type="submit"
-            className="border border-neutral-300 px-4 py-2 text-neutral-400 hover:text-white hover:border-white rounded-lg"
+            className="border border-neutral-300 px-8 py-2 text-neutral-400 hover:text-white hover:border-white rounded-lg "
           >
-            Senden
+            Send
           </button>
           {successAlert && (
             <div className="rounded-xl bg-green-600 px-4 py-2 text-lg text-white md:text-xl">
-              Email gesendet!
+              Email sent!
             </div>
           )}
           {errorAlert && (
             <div className="rounded-xl bg-red-600 px-4 py-2 text-lg text-white md:text-xl">
-              Es gab einen Fehler, bitte versuche es erneut.
+              There was an error, please try again.
             </div>
           )}
         </div>
