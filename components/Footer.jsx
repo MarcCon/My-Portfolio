@@ -13,7 +13,7 @@ const Footer = () => {
             width={0}
             height={0}
             sizes="100%"
-            src="/Mittel.png"
+            src="/ich.png"
             className="w-[100px] h-[100px] border border-neutral-600 rounded-xl -mt-[120px] mb-[20px]"
             alt="Bild von Marc"
           />
