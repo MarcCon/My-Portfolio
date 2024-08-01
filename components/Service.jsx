@@ -9,7 +9,7 @@ const Service = () => {
   return (
     <div className="mx-auto max-w-5xl rounded-xl border border-borderGray ">
       <div className="pb-6 p-4 sm:p-6">
-        <h2 className="text-2xl font-semibold text-white">Expertise</h2>
+        <h2 className="text-2xl  text-white">Expertise</h2>
         <p className="text-lg text-neutral-400 mb-6 sm:mb-12">
           Meine Fähigkeiten im Überblick.
         </p>
@@ -66,7 +66,7 @@ const Service = () => {
           <h3 className="text-lg text-white">Lass uns ein Projekt starten!</h3>
           <p className="text-neutral-400">Gemeinsam Ideen verwirklichen.</p>
         </div>
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+        <button className="border border-borderGray text-white px-4 py-2 rounded-lg">
           Schreib mir
         </button>
       </div>

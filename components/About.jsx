@@ -15,28 +15,26 @@ const About = () => {
             layout="responsive"
             width={150}
             height={150}
-            className="border border-neutral-600 rounded-xl"
+            className="  rounded-xl"
             alt="Bild von Marc"
           />
-          <div className="flex gap-4 items-center justify-center mt-4">
+          <div className="flex gap-2 items-center mt-4">
             <IoLocationOutline className="text-3xl text-white" />
-            <p className="text-xl text-white">Leipzig</p>
+            <p className="text-lg text-white">Leipzig</p>
           </div>
         </div>
 
         <div className="w-full md:w-3/4 p-4 rounded-xl border border-borderGray">
-          <h2 className="pb-4 text-2xl text-white">Hi, ich bin Marc</h2>
-          <p className="text-lg text-neutral-400 font-light">
-            Hi, ich bin Marc. Ich entwickle Websites und SaaS-Lösungen mit Fokus
-            auf aktuelle Trends und Technologien, um zukunftssichere Anwendungen
-            zu schaffen. Derzeit studiere ich Wirtschaftsinformatik im Master
-            und bringe mein Wissen und technische Expertise in jedes meiner
-            Projekte ein.
+          <h2 className="pb-4 md:text-2xl text-xl text-white">Hi, I'm Marc.</h2>
+          <p className="md:text-lg text-base text-neutral-400 font-light">
+            I develop websites and SaaS solutions with a focus on current trends
+            and technologies to create future-proof applications. I am currently
+            studying Business Informatics for my Master's degree and bring my
+            knowledge and technical expertise to each of my projects.
             <br />
             <br />
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-            sed diam nonumy eirmod.
+            Neben der Softwareentwicklung habe ich ebenfalls ein Auge für
+            modernes und sauberes UI/UX-Design.
           </p>
         </div>
       </div>

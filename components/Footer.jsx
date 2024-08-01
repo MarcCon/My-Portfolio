@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { CiMail } from "react-icons/ci";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -23,22 +24,47 @@ const Footer = () => {
             Ich entwickle Websites <br />& Webapps
           </p>
           <div className="flex gap-4">
-            <CiMail className="text-3xl text-neutral-400 hover:text-white" />
-            <FaGithub className="text-3xl text-neutral-400 hover:text-white" />
-            <FaLinkedin className="text-3xl text-neutral-400 hover:text-white" />
+            <a href="mailto:kontakt@marcenke.de">
+              {" "}
+              <CiMail className="text-3xl text-neutral-400 hover:text-white" />
+            </a>
+            <a target="_blank" rel="nopener" href="https://github.com/MarcCon">
+              <FaGithub className="text-3xl text-neutral-400 hover:text-white" />
+            </a>
+
+            <a
+              target="_blank"
+              rel="nopener"
+              href="https://www.linkedin.com/in/marc-constantin-enke-b691a3218/"
+            >
+              <FaLinkedin className="text-3xl text-neutral-400 hover:text-white" />
+            </a>
           </div>
         </div>
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
-          <p className="text-white text-lg mb-2">Service</p>
-          <p className="text-neutral-400 text-lg">Websites</p>
-          <p className="text-neutral-400 text-lg">SaaS</p>
-          <p className="text-neutral-400 text-lg">KI Integration</p>
+          <p className="text-white text-lg mb-2 hover:text-white">Service</p>
+          <p className="text-neutral-400 text-lg hover:text-white">Websites</p>
+          <p className="text-neutral-400 text-lg hover:text-white">SaaS</p>
+          <p className="text-neutral-400 text-lg hover:text-white">
+            KI Integration
+          </p>
         </div>
 
         <div className="flex flex-col items-center md:items-start">
           <p className="text-white text-lg mb-2">Sonstiges</p>
-          <p className="text-neutral-400 text-lg">Impressum</p>
-          <p className="text-neutral-400 text-lg">Datenschutz</p>
+
+          <Link
+            href="/impressum"
+            className="text-neutral-400 text-lg hover:text-white"
+          >
+            Impressum
+          </Link>
+          <Link
+            href="/datenschutz"
+            className="text-neutral-400 text-lg hover:text-white"
+          >
+            Datenschutz
+          </Link>
         </div>
       </div>
     </div>

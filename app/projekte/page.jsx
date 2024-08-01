@@ -19,12 +19,11 @@ const page = () => {
         </div>
         <div className=" px-2">
           <Project
-            websiteUrl="https://github.com/MarcCon/NomadNexus"
-            imageUrl="/nomad.png"
-            projectUrl=""
-            githubUrl="https://github.com/MarcCon/NomadNexus"
-            title="Reiseprotokoll"
-            description="Eine Anwendung zum Protokollieren von Städtetrips."
+            websiteUrl="https://eventbuster.de/"
+            imageUrl="/eventbuster.png"
+            projectUrl="https://eventbuster.de/"
+            title="SaaS"
+            description="Einfache QR-Code Ticketerstellung."
           />
         </div>
         <div className=" px-2">

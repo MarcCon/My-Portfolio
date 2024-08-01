@@ -16,7 +16,8 @@ const BlogTestimonial = () => {
           <div>
             <h3 className="text-lg text-white">Blog</h3>
             <p className="text-neutral-400">
-              Meine Gedanken zu Gott und die Welt.
+              Hier teile ich meine Interessen und spannende Case Studies aus
+              meinen Projekten.
             </p>
           </div>
         </div>

@@ -11,7 +11,7 @@ import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-12 max-w-5xl mx-auto px-8 md:px-4">
+    <div className="flex flex-col gap-12  max-w-4xl  mx-auto px-8 md:px-4">
       <div className="mb-16">
         <Header />
       </div>
