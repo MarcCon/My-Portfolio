@@ -8,8 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Front-End Entwickler Marc-Constantin Enke",
-  description:
-    "Marc-Constantin Enke - Front-End Entwickler mit Spezialisierung auf moderne Javascript-Frameworks",
+  description: "Marc-Constantin Enke - Freelance Front-End Entwickler",
 };
 
 export default function RootLayout({ children }) {
