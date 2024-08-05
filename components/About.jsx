@@ -26,14 +26,13 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-3/4 p-4 rounded-xl border border-borderGray">
+        <div className="w-full md:w-3/4 p-4 sm:p-8 rounded-xl border border-borderGray">
           <h2 className="pb-4 md:text-2xl text-xl text-white">Hi, I'm Marc.</h2>
           <p className="md:text-lg text-base text-neutral-400">
-            I develop websites and SaaS solutions using the latest technologies
-            to create future-proof applications. As a Master’s student in
-            Business Informatics, I bring my expertise to every project. As a
-            freelancer, I support web projects, ensuring high-quality results by
-            working closely with other developers.
+            I’m a Master’s student in Business Informatics, specializing in
+            creating innovative and future-proof websites and SaaS solutions. As
+            a freelancer, I collaborate with other developers to ensure
+            top-quality results for every project.
             <br />
             <br />I am currently working for{" "}
             <a
