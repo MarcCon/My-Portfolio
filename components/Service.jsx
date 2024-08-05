@@ -1,9 +1,10 @@
-import Image from "next/image";
+"use client";
 import React from "react";
 import { LuLayout } from "react-icons/lu";
 import { IoIosSearch } from "react-icons/io";
 import { IoMdCode } from "react-icons/io";
 import { HiOutlineChip } from "react-icons/hi";
+import { Link as ScrollLink } from "react-scroll";
 
 const Service = () => {
   return (
@@ -65,9 +66,11 @@ const Service = () => {
           <h3 className="text-lg text-white">Want to work together?</h3>
           <p className="text-neutral-400">Let's realize ideas.</p>
         </div>
-        <button className="border border-borderGray text-white px-4 py-2 rounded-lg">
-          Write me
-        </button>
+        <ScrollLink to="contact" smooth={true} offset={-100} duration={500}>
+          <button className="border border-borderGray text-white px-4 py-2 rounded-lg">
+            Write me
+          </button>
+        </ScrollLink>
       </div>
     </div>
   );

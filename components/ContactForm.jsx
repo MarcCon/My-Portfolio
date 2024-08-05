@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Link as ScrollLink } from "react-scroll";
 
 const ContactForm = () => {
   const [successAlert, setSuccessAlert] = useState(false);
@@ -38,7 +39,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mx-auto max-w-5xl p-4 sm:p-8 bg-fillGray rounded-xl border border-borderGray">
+    <div
+      id="contact"
+      className="mx-auto max-w-5xl p-4 sm:p-8 bg-fillGray rounded-xl border border-borderGray"
+    >
       <h2 className="text-2xl text-white">Just write me.</h2>
       <p className="md:text-lg text-base text-neutral-400 mb-6 sm:mb-12">
         Whether exciting projects or just a chat about current tech trends. I

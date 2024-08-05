@@ -29,20 +29,21 @@ const About = () => {
         <div className="w-full md:w-3/4 p-4 rounded-xl border border-borderGray">
           <h2 className="pb-4 md:text-2xl text-xl text-white">Hi, I'm Marc.</h2>
           <p className="md:text-lg text-base text-neutral-400">
-            I develop websites and SaaS solutions with a focus on current trends
-            and technologies to create future-proof applications. I am currently
-            studying Business Informatics for my Master's degree and bring my
-            knowledge and technical expertise to each of my projects.
+            I develop websites and SaaS solutions using the latest technologies
+            to create future-proof applications. As a Master’s student in
+            Business Informatics, I bring my expertise to every project. As a
+            freelancer, I support web projects, ensuring high-quality results by
+            working closely with other developers.
             <br />
             <br />I am currently working for{" "}
             <a
               href="https://felixhagspiel.de/"
               target="_blank"
-              className="underline"
+              className="underline hover:text-white hover:underline-white"
             >
               Felix Hagspiel
             </a>{" "}
-            as a Freelance Front-End Developer.
+            as a Freelance Junior Front-End Developer.
           </p>
         </div>
       </div>

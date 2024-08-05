@@ -20,8 +20,8 @@ const Header = () => {
   return (
     <div className="mt-44">
       <div className="md:text-5xl text-3xl text-white hyphens-auto">
-        <h1 className="mb-2">I develop websites that users love.</h1>
-        <h1>Reliable and efficient.</h1>
+        <h1 className="mb-2">I create websites that users love.</h1>
+        <h1>On time and affordable.</h1>
       </div>
       <div className="flex gap-4">
         <a

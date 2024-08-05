@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { FiBook } from "react-icons/fi";
 import { CgQuote } from "react-icons/cg";
+import Link from "next/link";
 
 const BlogTestimonial = () => {
   return (
@@ -19,32 +20,32 @@ const BlogTestimonial = () => {
             </p>
           </div>
         </div>
-        <button className="bg-neutral-800 text-white px-4 py-2 mt-4 rounded-lg self-start">
-          More
-        </button>
+        <Link href="/blog">
+          <button className="bg-neutral-800 text-white px-4 py-2 mt-4 rounded-lg self-start">
+            More
+          </button>
+        </Link>
       </div>
 
       <div className="bg-fillGray p-6 sm:p-8 rounded-xl border border-borderGray">
-        {/* <CgQuote className="text-6xl text-white" /> */}
-
-        <blockquote className="text-neutral-400 mb-4 mt-4">
-          <p className="italic">
-            "Die Zusammenarbeit mit Marc an den MVPs für Moouv und Eventbusters
-            war klasse. Dank seiner Unterstützung und schnellen Umsetzung
-            konnten wir beide Projekte im Handumdrehen launchen."
-          </p>
+        <blockquote className="text-neutral-400 mb-8 italic">
+          "Working with Marc on blinq and my other projects has been great. As a
+          Junior Frontend Developer, he supports me with my React projects. He
+          quickly familiarizes himself with new tools, requirements and
+          interfaces and then implements them independently. He’s reliable,
+          detail-oriented, and a real asset to my team."
         </blockquote>
         <div className="flex items-center mt-4">
           <Image
-            src="/eremiya.jpeg"
+            src="/felix_color.jpg"
             width={60}
             height={60}
             className="rounded-full mr-4"
             alt="Profilbild"
           />
           <div>
-            <h3 className="text-white">Eremiya Rifat</h3>
-            <p className="text-neutral-400">Softwareentwickler</p>
+            <h3 className="text-white text-base">Felix Hagspiel</h3>
+            <p className="text-neutral-400 text-sm">CTO – PAYLAX</p>
           </div>
         </div>
       </div>
