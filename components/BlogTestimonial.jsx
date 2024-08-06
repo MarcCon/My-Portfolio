@@ -29,11 +29,12 @@ const BlogTestimonial = () => {
 
       <div className="bg-fillGray p-6 sm:p-8 rounded-xl border border-borderGray">
         <blockquote className="text-neutral-400 mb-8 italic">
-          "Working with Marc on blinq and my other projects has been great. As a
-          Junior Frontend Developer, he supports me with my React projects. He
-          quickly familiarizes himself with new tools, requirements and
-          interfaces and then implements them independently. He’s reliable,
-          detail-oriented, and a real asset to my team."
+          "Collaborating with Marc on blinq and various other projects has been
+          great. As a Junior Frontend Developer, he brings valuable support to
+          my React development work. He quickly familiarizes himself with new
+          tools, requirements, and interfaces, then implements them
+          independently. His reliability, attention to detail, and dedication
+          make him a valuable member of my team."
         </blockquote>
         <div className="flex items-center mt-4">
           <Image
@@ -45,7 +46,9 @@ const BlogTestimonial = () => {
           />
           <div>
             <h3 className="text-white text-base">Felix Hagspiel</h3>
-            <p className="text-neutral-400 text-sm">CTO – PAYLAX</p>
+            <p className="text-neutral-400 text-sm">
+              Freelance Fullstack-Developer
+            </p>
           </div>
         </div>
       </div>
