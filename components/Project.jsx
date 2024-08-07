@@ -22,7 +22,7 @@ function Project({
         <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
           <img
             src={imageUrl}
-            className="w-full h-[280px] rounded-tr-lg rounded-tl-lg"
+            className="w-full md:h-[280px] h-full rounded-tr-lg rounded-tl-lg"
             alt={title}
           />
         </a>
