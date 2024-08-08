@@ -19,8 +19,8 @@ const page = () => {
           tasks={[
             "Unit-Testing with Jest",
             "Formvalidation with React Hook Form",
-            "created reusable components",
-            " Data fetching with GraphQL",
+            "Created reusable components",
+            "Data fetching with GraphQL",
           ]}
         />
 
