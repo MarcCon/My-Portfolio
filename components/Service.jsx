@@ -53,7 +53,7 @@ const Service = () => {
               <HiOutlineChip className="text-white text-2xl" />
             </div>
             <div>
-              <h3 className="text-lg text-white">KI-Integration</h3>
+              <h3 className="text-lg text-white">AI-Integration</h3>
               <p className="text-neutral-400">
                 Process optimization with the help of artificial intelligence.
               </p>
