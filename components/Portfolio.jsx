@@ -19,6 +19,7 @@ function Portfolio() {
             "Formvalidation with React Hook Form",
             "Created reusable components",
             "Data fetching with GraphQL",
+            "AI Implementation",
           ]}
         />
 
