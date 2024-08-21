@@ -21,6 +21,7 @@ const page = () => {
             "Formvalidation with React Hook Form",
             "Created reusable components",
             "Data fetching with GraphQL",
+            "AI Impementation",
           ]}
         />
 
