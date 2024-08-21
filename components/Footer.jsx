@@ -46,7 +46,7 @@ const Footer = () => {
           <p className="text-neutral-400 text-lg hover:text-white">Websites</p>
           <p className="text-neutral-400 text-lg hover:text-white">SaaS</p>
           <p className="text-neutral-400 text-lg hover:text-white">
-            KI Integration
+            AI Integration
           </p>
         </div>
 
