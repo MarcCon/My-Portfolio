@@ -10,8 +10,8 @@ function Portfolio() {
       <div className="grid md:grid-cols-2 grid-cols-1 justify-center  gap-16">
         <Project
           imageUrl="/blinq.png"
-          websiteUrl="https://app.theblinq.de"
-          projectUrl="https://app.theblinq.de"
+          websiteUrl="https://theblinq.de/"
+          projectUrl="https://theblinq.de/"
           title="Webapp"
           description="Frontend-Work for a startup."
           tasks={[
