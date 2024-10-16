@@ -46,9 +46,7 @@ const BlogTestimonial = () => {
           />
           <div>
             <h3 className="text-white text-base">Felix Hagspiel</h3>
-            <p className="text-neutral-400 text-sm">
-              Freelance Fullstack-Developer
-            </p>
+            <p className="text-neutral-400 text-sm">Head of Tech – blinq</p>
           </div>
         </div>
       </div>

@@ -36,13 +36,13 @@ const About = () => {
             <br />
             <br />I am currently working for{" "}
             <a
-              href="https://felixhagspiel.de/"
+              href="https://theblinq.de"
               target="_blank"
               className="underline hover:text-white hover:underline-white"
             >
-              Felix Hagspiel
+              blinq
             </a>{" "}
-            as a Freelance Junior Front-End Developer.
+            as a Freelance Front-End Developer.
           </p>
         </div>
       </div>
