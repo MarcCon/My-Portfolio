@@ -17,12 +17,12 @@ function Project({
   };
 
   return (
-    <div className="w-full flex flex-col bg-fillGray rounded-xl border border-borderGray">
+    <div className="w-full flex flex-col bg-fillGray rounded-xl border border-borderGray overflow-hidden">
       <div>
         <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
           <img
             src={imageUrl}
-            className="w-full md:h-[280px] h-full rounded-tr-lg rounded-tl-lg"
+            className="w-full md:h-[280px] h-full "
             alt={title}
           />
         </a>
