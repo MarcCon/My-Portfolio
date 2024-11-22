@@ -1,8 +1,22 @@
+"use client";
+import dayjs from "dayjs";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 
 const About = () => {
+  const [time, setTime] = useState();
+
+  useEffect(() => {
+    setTime(dayjs().format("hh:mm A"));
+
+    const intervall = setInterval(() => {
+      setTime(dayjs().format("hh:mm A"));
+    }, 1000);
+
+    return () => clearInterval(intervall);
+  }, []);
+
   return (
     <>
       <div
@@ -18,10 +32,14 @@ const About = () => {
             className="  rounded-xl"
             alt="Bild von Marc"
           />
-          <div className="flex gap-2  mt-4">
+          <div className="flex gap-8 w-full  mt-4">
             <div>
               <p className="text-white text-base">Leipzig</p>
               <p className="text-neutral-400 text-sm">Location</p>
+            </div>
+            <div>
+              <p className="text-white text-base">Time</p>
+              <p className="text-neutral-400 text-sm">{time}</p>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ function Portfolio() {
     <div>
       <h2 className="md:text-3xl text-2xl text-white mb-6">Recent Work</h2>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 justify-center  gap-16">
+      <div className="grid md:grid-cols-2 grid-cols-1 justify-center  gap-8">
         <Project
           imageUrl="/blinq.png"
           websiteUrl="https://theblinq.de/"
@@ -30,14 +30,6 @@ function Portfolio() {
           title="Web App"
           description="A User-Friendly Web Tool for Customized PDF Designs."
         />
-      </div>
-      <div className="w-full text-center mt-16">
-        <Link
-          href="/projekte"
-          className="text-neutral-400 text-xl mt-16 hover:text-white"
-        >
-          More Projects
-        </Link>
       </div>
     </div>
   );
