@@ -40,9 +40,9 @@ const page = () => {
           description="Software for simple QR code ticket creation."
         />
         <Project
-          websiteUrl="https://mute-it.vercel.app/"
+          websiteUrl="https://mute-it-app.vercel.app/"
           imageUrl="/bleep.png"
-          projectUrl="https://mute-it.vercel.app/"
+          projectUrl="https://mute-it-app.vercel.app/"
           title="SaaS"
           description="An AI tool for automated video censorship."
         />
