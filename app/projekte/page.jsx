@@ -14,30 +14,29 @@ const page = () => {
           imageUrl="/blinq.png"
           websiteUrl="https://app.theblinq.de"
           projectUrl="https://app.theblinq.de"
-          title="Webapp"
-          description="Frontend-Work for a startup."
+          title="SaaS"
+          description="Contributing Frontend Development for a Startup."
           tasks={[
             "Unit-Testing with Jest",
-            "Formvalidation with React Hook Form",
-            "Created reusable components",
+            "Form validation using React Hook Form",
+            "Development of reusable components",
             "Data fetching with GraphQL",
             "AI Impementation",
           ]}
         />
-
         <Project
-          imageUrl="/lara.png"
-          websiteUrl="https://www.larakuche-fotografie.de"
-          projectUrl="https://www.larakuche-fotografie.de"
-          githubUrl="https://github.com/MarcCon/LandingPage-Fotografin"
-          title="Landing Page"
-          description="A responsive landing page for a photographer."
+          websiteUrl="https://lccpostgrad2024.com"
+          imageUrl="/lcc.png"
+          projectUrl="https://lccpostgrad2024.com"
+          title="Web App"
+          description="A User-Friendly Web Tool for Customized PDF Designs."
         />
+
         <Project
           websiteUrl="https://eventbuster.de/"
           imageUrl="/eventbuster.png"
           projectUrl="https://eventbuster.de/"
-          title="Webapp"
+          title="Web App"
           description="Software for simple QR code ticket creation."
         />
         <Project
@@ -45,7 +44,15 @@ const page = () => {
           imageUrl="/bleep.png"
           projectUrl="https://mute-it.vercel.app/"
           title="SaaS"
-          description="An online tool for censoring videos."
+          description="An AI tool for automated video censorship."
+        />
+        <Project
+          imageUrl="/lara.png"
+          websiteUrl="https://www.larakuche-fotografie.de"
+          projectUrl="https://www.larakuche-fotografie.de"
+          githubUrl="https://github.com/MarcCon/LandingPage-Fotografin"
+          title="Landing Page"
+          description="A responsive landing page for a photographer."
         />
         <Project
           websiteUrl="https://github.com/MarcCon/Tailwind-Chrome-Extension"

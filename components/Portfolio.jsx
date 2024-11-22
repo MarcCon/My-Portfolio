@@ -12,23 +12,23 @@ function Portfolio() {
           imageUrl="/blinq.png"
           websiteUrl="https://theblinq.de/"
           projectUrl="https://theblinq.de/"
-          title="Webapp"
-          description="Frontend-Work for a startup."
+          title="SaaS"
+          description="Contributing Frontend Development for a Startup."
           tasks={[
             "Unit-Testing with Jest",
-            "Formvalidation with React Hook Form",
-            "Created reusable components",
+            "Form validation using React Hook Form",
+            "Development of reusable components",
             "Data fetching with GraphQL",
-            "AI Implementation",
+            "AI Impementation",
           ]}
         />
 
         <Project
-          websiteUrl="https://mute-it.vercel.app/"
-          imageUrl="/bleep.png"
-          projectUrl="https://mute-it.vercel.app/"
-          title="SaaS"
-          description="A tool for automatically censoring words."
+          websiteUrl="https://lccpostgrad2024.com"
+          imageUrl="/lcc.png"
+          projectUrl="https://lccpostgrad2024.com"
+          title="Web App"
+          description="A User-Friendly Web Tool for Customized PDF Designs."
         />
       </div>
       <div className="w-full text-center mt-16">
