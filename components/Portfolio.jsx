@@ -13,7 +13,7 @@ function Portfolio() {
           websiteUrl="https://theblinq.de/"
           projectUrl="https://theblinq.de/"
           title="SaaS"
-          description="Contributing Frontend Development for a Startup."
+          description="Contributing Frontend Development for a startup that revolutionizes PR with an AI-powered search engine."
           tasks={[
             "Unit-Testing with Jest",
             "Form validation using React Hook Form",
@@ -28,7 +28,7 @@ function Portfolio() {
           imageUrl="/lcc.png"
           projectUrl="https://lccpostgrad2024.com"
           title="Web App"
-          description="A User-Friendly Web Tool for Customized PDF Designs."
+          description="A web tool designed for creating customized PDF layouts for the London College of Communication."
         />
       </div>
     </div>

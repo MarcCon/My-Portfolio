@@ -12,10 +12,10 @@ const page = () => {
       <div className="mb-32 grid md:grid-cols-2 grid-cols-1 justify-center mx-auto gap-8 md:gap-12">
         <Project
           imageUrl="/blinq.png"
-          websiteUrl="https://app.theblinq.de"
-          projectUrl="https://app.theblinq.de"
+          websiteUrl="https://theblinq.de/"
+          projectUrl="https://theblinq.de/"
           title="SaaS"
-          description="Contributing Frontend Development for a Startup."
+          description="Contributing Frontend Development for a startup that revolutionizes PR with an AI-powered search engine."
           tasks={[
             "Unit-Testing with Jest",
             "Form validation using React Hook Form",

@@ -31,7 +31,7 @@ function Project({
         <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
           {title}
         </h2>
-        <p className="text-neutral-400 text-base md:text-lg">{description}</p>
+        <p className="text-neutral-400 text-base md:text-base">{description}</p>
         <div className="flex flex-col gap-4 pr-4 mt-2">
           <div className="flex gap-4">
             {projectUrl && (
