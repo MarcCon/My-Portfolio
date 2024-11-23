@@ -22,18 +22,19 @@ function Project({
         <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
           <img
             src={imageUrl}
-            className="w-full md:h-[280px] h-full "
+            className="w-full md:h-[280px] h-full"
             alt={title}
           />
         </a>
       </div>
-      <div className="p-4">
+      <div className="p-4 flex flex-col">
         <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
           {title}
         </h2>
         <p className="text-neutral-400 text-base md:text-base">{description}</p>
-        <div className="flex flex-col gap-4 pr-4 mt-2">
-          <div className="flex gap-4">
+        <div className="flex gap-4 pr-4 pt-4 mt-auto">
+          {" "}
+          <div className="flex justify-start w-full gap-4">
             {projectUrl && (
               <a
                 href={projectUrl}
@@ -59,22 +60,22 @@ function Project({
             <div className="flex items-start flex-col gap-2">
               <button
                 onClick={toggleTasks}
-                className="hover:text-white underline text-neutral-400 hover:underline focus:outline-none"
+                className="hover:text-white whitespace-nowrap underline text-neutral-400 hover:underline focus:outline-none"
               >
                 Key Tasks
               </button>
-              {showTasks && (
-                <ul className="mt-2 text-sm text-neutral-400">
-                  {tasks.map((task, index) => (
-                    <li key={index} className="text-base">
-                      {task}
-                    </li>
-                  ))}
-                </ul>
-              )}
             </div>
           )}
         </div>
+        {showTasks && (
+          <ul className="mt-2 text-sm text-neutral-400">
+            {tasks.map((task, index) => (
+              <li key={index} className="text-base">
+                {task}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
