@@ -30,11 +30,11 @@ const BlogTestimonial = () => {
       <div className="bg-fillGray p-6 sm:p-8 rounded-xl border border-borderGray">
         <blockquote className="text-neutral-400 mb-8 italic">
           "Collaborating with Marc on blinq and various other projects has been
-          great. As a Junior Frontend Developer, he brings valuable support to
-          my React development work. He quickly familiarizes himself with new
-          tools, requirements, and interfaces, then implements them
-          independently. His reliability, attention to detail, and dedication
-          make him a valuable member of my team."
+          great. As a Frontend Developer, he brings valuable support to my React
+          development work. He quickly familiarizes himself with new tools,
+          requirements, and interfaces, then implements them independently. His
+          reliability, attention to detail, and dedication make him a valuable
+          member of my team."
         </blockquote>
         <div className="flex items-center mt-4">
           <Image
