@@ -32,7 +32,7 @@ const About = () => {
             className="  rounded-xl"
             alt="Bild von Marc"
           />
-          <div className="flex gap-8 w-full  mt-4">
+          <div className="flex  gap-2 md:gap-8  w-full  mt-4">
             <div>
               <p className="text-white text-base">Leipzig</p>
               <p className="text-neutral-400 text-sm">Location</p>
