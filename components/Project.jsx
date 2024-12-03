@@ -28,9 +28,7 @@ function Project({
         </a>
       </div>
       <div className="p-4 flex flex-col">
-        <h2 className="text-white md:text-2xl text-xl font-normal mt-4">
-          {title}
-        </h2>
+        <h2 className="text-white text-xl font-normal mt-4">{title}</h2>
         <p className="text-neutral-400 text-base md:text-base">{description}</p>
         <div className="flex gap-4 pr-4 pt-4 mt-auto">
           {" "}
